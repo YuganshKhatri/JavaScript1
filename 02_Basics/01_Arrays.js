@@ -27,6 +27,17 @@ const dc_heroes=["Superman","Flash","Batman"]
 // marvel_heroes.push(dc_heroes)
 // console.log(marvel_heroes)
 const newCombinedArray=marvel_heroes.concat(dc_heroes)
-console.log(newCombinedArray)
+// console.log(newCombinedArray)
 const new_Array=[...marvel_heroes,...dc_heroes] // Spread Method That shatters all the elements and then merges them back into one Single Array Basically Concatinates all the Arrays
-console.log(new_Array)
+// console.log(new_Array)
+const real_Array=[1,2,3,5,[6,7,8,[9,10,11],90,100]]
+// console.log(real_Array);
+const usable_real_Array=real_Array.flat(Infinity)
+// console.log(usable_real_Array)
+// console.log(Array.isArray(usable_real_Array));
+// console.log(Array.from("Yugansh"));
+let score1=100
+let score2=200
+let score3=300
+console.log(Array.of(score1,score2,score3))
+
