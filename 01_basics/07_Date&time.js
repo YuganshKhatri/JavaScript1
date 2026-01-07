@@ -1,0 +1,32 @@
+// const { Temporal }=require("@js-temporal/polyfill");
+// console.log(Temporal.Now.plainTimeISO().toString())
+let myDate=new Date() // Date -> Object
+// console.log(myDate.toString())
+// console.log(myDate.toDateString())
+// console.log(myDate.toISOString())
+// console.log(myDate.toJSON())
+// console.log(myDate.toLocaleDateString())
+// console.log(myDate.toLocaleString())
+// console.log(myDate.toLocaleTimeString())
+
+// let myCreatedDate=new Date(2026,0,7)
+// let myCreateddate2=new Date(2026,0,7,19,1,7,7)
+// console.log(myCreatedDate.toDateString())
+// console.log(myCreateddate2.toLocaleString())
+// const mytime2=Date.now()
+// const myTime=myCreateddate2.getTime()
+// console.log(myTime)
+// console.log(mytime2)
+// const myDate1=new Date(2025,11,7,7,5,10)
+// const myDate2=Date.now()
+// // console.log(myDate1.toLocaleString())
+// console.log(myDate1.toLocaleString())
+// console.log(myDate1.getTime())
+// console.log(myDate2)
+// console.log(Date.now())
+const newDate=new Date()
+console.log(newDate)
+console.log(newDate.toLocaleDateString('default',{
+    weekday: 'long'
+}))
+console.log(newDate.toDateString())
