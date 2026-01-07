@@ -6,12 +6,27 @@
 // let LoggedIn="Yugansh"
 // let booleanLoggedIn=Boolean(LoggedIn)
 // console.log(booleanLoggedIn)
-let number=33
-let Stringnumber=String(number)
-console.log(typeof Stringnumber);
-console.log(Stringnumber);
-
-
+// let number=33
+// let Stringnumber=String(number)
+// console.log(typeof Stringnumber);
+// console.log(Stringnumber);
+//                              OPERATIONS 
+let value=3
+let negvalue=-value
+console.log(negvalue)
+console.log(3**3)
+console.log(3%3)
+let str1="Hello"
+let str2="Yugansh"
+let str3=str1+" "+str2
+console.log(str3)
+console.log("1"+2+3+4+5)
+console.log(1+2+3+"2"+5+6)
+let x=3
+let y=x++
+let z=++x
+console.log(y)
+console.table([y, z])
 
 
 
