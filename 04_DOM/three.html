@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inserting using DOM</title>
+</head>
+<body style="background-color: #212121;color: #fff;">
+    
+</body>
+<script>
+    function addDiv(te){
+        const div=document.createElement('div')
+        div.className="divclass"
+        div.id=Math.floor(Math.random()*10+1)
+        div.style.backgroundColor='green'
+        div.style.color='white'
+        div.style.textAlign='center'
+        div.style.padding='10px'
+        //div.innerText="Java Script"
+        const addText=document.createTextNode(`${te}`)
+        div.appendChild(addText)
+        document.body.appendChild(div)
+    }
+    addDiv("Java Script")
+    addDiv("Add")
+    const input=document.createElement('input')
+    input.className="inputclass"
+    input.id=Math.floor(Math.random()*10+1)
+    input.type="Password"
+    const addText1=document.createTextNode("Enter Your Password Here")
+    input.appendChild(addText1)
+    document.body.appendChild(input)
+    console.log(input)
+</script>
+</html>
