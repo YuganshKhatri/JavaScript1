@@ -50,7 +50,10 @@ let ObjectArray=[
 // for(const index of ObjectArray){
 //     console.log(`Details -> email-${index.email} and name-${index.name}`)
 // }
-let arraynum=[10,20,340,560]
-for(const i of arraynum){
-    console.log(i)
-}
+// let arraynum=[10,20,340,560]
+// for(const i of arraynum){
+//     console.log(i)
+// }
+ObjectArray.forEach((item) =>{
+    console.log(item.name)
+})
