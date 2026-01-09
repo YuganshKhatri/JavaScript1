@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Async Java Script</title>
+</head>
+<body>
+    <h1>Chai aur Javascript</h1>
+    <button id="start">start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    function Name_Date(){
+        console.log("khatri",Date.now())
+    }
+    let MyDate
+    document.querySelector('#start').addEventListener('click',function(){
+        MyDate=setInterval(Name_Date,1000)   
+    })
+    document.querySelector("#stop").addEventListener('click',function(){
+        clearInterval(MyDate)
+    })
+</script>
+</html>
