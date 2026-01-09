@@ -35,6 +35,21 @@
     //     e.preventDefault()
     //     e.stopPropagation()
     // },false)
-      
+    document.getElementById('google').addEventListener('click',function(e){
+        e.preventDefault()
+    })
+    document.getElementById('leetcode').addEventListener('click',function(e){
+        e.preventDefault()
+    })
+    const images=document.querySelector("#images")
+    images.addEventListener('click',function(e){
+        console.log(e.target.tagName)
+        if(e.target.tagName==='IMG'){
+            console.log(e.target.id)
+            const removeIt=e.target.parentNode
+            removeIt.remove()
+        }
+    },false)
+    // console.log(images)
 </script>
 </html>
