@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit and Remove Element</title>
+</head>
+<body style="background-color: #212121;color: #fff;">
+    <ul class="language">
+        <li>Java Script</li>
+    </ul>
+</body>
+<script>
+    function addLanguage(lang){
+        const listele=document.createElement('li')
+        // const Text=document.createTextNode(`${lang}`)
+        // listele.appendChild(Text)
+        listele.innerHTML=`${lang}`
+        //console.log(listele)
+        const parent=document.querySelector(".language")
+        parent.appendChild(listele)
+        //console.log(parent)
+    }
+    addLanguage("Python")
+    addLanguage("Java")
+    addLanguage("C++")
+    function addOptiLanguage(langName){
+        const li=document.createElement('li')
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+    // addOptiLanguage("hello world")
+    function toEdit(number,Text){
+        const li=document.createElement('li')
+        li.textContent=`${Text}`
+        const lang=document.querySelector(`li:nth-child(${number})`)
+        lang.replaceWith(li)
+    }
+    toEdit(2,"Python")
+    // const li=document.createElement('li')
+    // li.textContent="TypeScript"
+    // const lang=document.querySelector("li:nth-child(1)")
+    // lang.replaceWith(li)
+    toEdit(1,"Type Script")
+    function toRemove(number){
+        const lang=document.querySelector(`li:nth-child(${number})`)
+        lang.remove()
+    }
+    toRemove(1)
+    toRemove(3)
+</script>
+</html>
